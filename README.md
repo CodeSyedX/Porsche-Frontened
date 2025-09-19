@@ -50,10 +50,10 @@ Follow these steps to run the project locally:
 
 ```bash
 # Clone the repository
-git clone [your-repository-url]
+git clone [https://github.com/CodeSyedX/Porsche-Frontened.git]
 
 # Navigate into the project folder
-cd [your-project-directory]
+cd [car-website]
 
 # Install dependencies
 npm install
