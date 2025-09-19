@@ -1,0 +1,259 @@
+/* Porsche911Page.css */
+/* src/App.css */
+.background-image {
+  background-image: url('./Images/back.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+.porsche-page {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.page-header h1 {
+  color: #d5001c; /* Porsche red */
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.content-container {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.image-section {
+  flex: 1;
+}
+
+.details-section {
+  flex: 1;
+}
+
+.image-display {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.car-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.image-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 15px;
+}
+
+.nav-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.view-360-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #d5001c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.view-360-btn:hover {
+  background-color: #a30015;
+}
+
+.image-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.indicator.active {
+  background-color: white;
+}
+
+.car-overview {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.car-overview h2 {
+  color: #d5001c;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.spec {
+  display: flex;
+  flex-direction: column;
+}
+
+.spec-label {
+  font-weight: bold;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.spec-value {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.features h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.features ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.features li {
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.features li:before {
+  content: "•";
+  color: #d5001c;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.price-calculator {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.price-calculator h2 {
+  color: #d5001c;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.calculator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.calculation-result {
+  background-color: #d5001c;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.calculation-result h3 {
+  margin: 0;
+}
+
+.page-footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #e0e0e0;
+  color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+  
+  .specs-grid {
+    grid-template-columns: 1fr;
+  }
+}
